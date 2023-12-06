@@ -11,7 +11,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<HomePage />} />
-        <Route path="/:countryId" element={<CountryDetailsPage />} />
+        <Route path="/countries/:countryId" element={<CountryDetailsPage />} />
       </Routes>
     </>
   );
