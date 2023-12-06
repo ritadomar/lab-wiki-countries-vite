@@ -32,7 +32,7 @@ function HomePage() {
               return (
                 <Link
                   className="list-group-item list-group-item-action"
-                  to={`/countries/${country.alpha3Code}`}
+                  to={`/${country.alpha3Code}`}
                   key={country._id}
                 >
                   <img
