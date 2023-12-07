@@ -8,12 +8,13 @@ function CountryDetailsPage() {
 
   useEffect(() => {
     axios
-      .get('https://ih-countries-api.herokuapp.com/countries')
+      .get(`https://ih-countries-api.herokuapp.com/countries/${countryId}`)
       .then(response => {
-        const singleCountry = response.data.find(
-          country => country.alpha3Code === countryId
-        );
-        setCountryData(singleCountry);
+        // const singleCountry = response.data.find(
+        //   country => country.alpha3Code === countryId
+        // );
+        setCountryData(response.data);
+        console.log(response);
       });
   }, [countryId]);
 
